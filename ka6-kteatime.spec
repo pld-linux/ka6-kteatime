@@ -1,19 +1,19 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	24.08.2
+%define		kdeappsver	24.08.3
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		kteatime
 Summary:	kteatime
 Summary(pl.UTF-8):	kteatime
 Name:		ka6-%{kaname}
-Version:	24.08.2
+Version:	24.08.3
 Release:	1
 License:	GPL v2+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	20ef0e2e186b597f8a0096fdd5dacaa3
+# Source0-md5:	e88024d5bfcafc5ee1c5f967f2c2cfe1
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel
 BuildRequires:	Qt6Gui-devel >= 5.11.1
