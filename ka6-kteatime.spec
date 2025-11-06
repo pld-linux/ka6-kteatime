@@ -1,19 +1,19 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	25.08.2
+%define		kdeappsver	25.08.3
 %define		kframever	5.94.0
 %define		qtver		5.15.2
 %define		kaname		kteatime
 Summary:	kteatime
 Summary(pl.UTF-8):	kteatime
 Name:		ka6-%{kaname}
-Version:	25.08.2
-Release:	2
+Version:	25.08.3
+Release:	1
 License:	GPL v2+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	01bb6bdbb34c768d9b63a8cafc7d4376
+# Source0-md5:	3c92462a5eb939d0c6f29d29e49ba292
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel
 BuildRequires:	Qt6Gui-devel >= 5.11.1
@@ -43,9 +43,9 @@ drink.
 
 %description -l pl.UTF-8
 KTeaTime jest przydatnym stoperem do zaparzania herbaty. Nie musisz
-więcej zgadywać jak długo trzeba czekać aż herbata będzie gotowa.
-Po prostu zaznacz typ herbaty którą masz i KTeaTime powiadomi Cię,
-gdy napój będzie gotowy do picia.
+więcej zgadywać jak długo trzeba czekać aż herbata będzie gotowa. Po
+prostu zaznacz typ herbaty którą masz i KTeaTime powiadomi Cię, gdy
+napój będzie gotowy do picia.
 
 %prep
 %setup -q -n %{kaname}-%{version}
